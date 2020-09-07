@@ -16,7 +16,8 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "lcobucci/jwt": "^3.3",
-        "php-http/guzzle6-adapter": "^2.0"
+        "php-http/guzzle6-adapter": "^2.0",
+        "sqmk/phue": "^1.7"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
