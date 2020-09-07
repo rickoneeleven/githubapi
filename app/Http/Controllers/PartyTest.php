@@ -16,9 +16,8 @@ class PartyTest extends Controller
 
         //if (strtotime($lastCommitTime) <= strtotime('-12 hours')) {
         if(date('Ymd') != date('Ymd', strtotime($lastCommitTime))) {
-            if($light->isOn()) { //no commit today
+            if($light->isOn() && $light->getBrightness(180)) { //no commit today and lights are dimming due to sunrise
                 $light->setHue("4541 4");
-                $light->setBrightness(180); 
             }
         } else { //commit today
             $light->setOn(True);
